@@ -8,24 +8,31 @@ fetch('./blog-posts/blog-data.json')
     data.posts.forEach(post => {
       let item = document.createElement('div');
       item.className = 'grid-item';
-      
-      let title = document.createElement('h2');
-      title.innerText = post.title;
 
-      let date = document.createElement('p');
-      date.innerText = post.date;
+      let link = document.createElement('a'); // New anchor tag
+      link.href = post.url; // Link to the post
 
       let image = document.createElement('img');
       image.src = `./blog-posts/blog-images/${post.image}`;
+      image.className = 'blog-img';
 
-      let preview = document.createElement('p');
-      preview.innerText = post.preview;
+      let overlay = document.createElement('div');
+      overlay.className = 'overlay';
 
-      let readMore = document.createElement('a');
-      readMore.href = post.url;
-      readMore.innerText = 'Read More';
+      let title = document.createElement('h2');
+      title.innerText = post.title;
+      title.className = 'post-title';
+      
+      let date = document.createElement('p');
+      date.innerText = post.date;
+      date.className = 'post-date';
 
-      item.append(image, title, date, preview, readMore);
+      overlay.append(title, date);
+      
+      link.append(image, overlay); // Append image and overlay to link instead of item
+
+      item.append(link); // Append the link to item
+
       container.appendChild(item);
     });
   });
