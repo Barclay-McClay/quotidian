@@ -1,0 +1,96 @@
+body,
+h1,
+h2,
+p {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #F8F9FA;
+    color: #212529;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+a {
+    text-decoration: none;
+    font-style: italic;
+    color: #75faff;
+    margin-top: 2em;
+    /* space after blog content */
+    display: inline-block;
+    /* center the link */
+}
+
+.container {
+    max-width: 800px;
+    /* narrower content for readability */
+    margin: 0 auto;
+    padding: 2em;
+}
+
+.post-navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: solid 4px #0D6EFD;
+}
+
+.nav-prev {
+    text-align: left;
+}
+
+.bottom-backlink {
+    text-align: center;
+}
+
+.nav-next {
+    text-align: right;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 2em;
+}
+
+.post-title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2em;
+    color: #0D6EFD;
+}
+
+.post-date {
+    font-size: 1em;
+    color: #6C757D;
+}
+
+.grid-item {
+    position: relative;
+    display: flex;
+    /* to use flex properties for centering */
+    justify-content: center;
+    /* center horizontally */
+    align-items: center;
+    /* center vertically */
+}
+
+.blog-img {
+    max-width: 50%;
+    /* keep within container */
+    height: auto;
+    object-fit: cover;
+    /* maintain aspect ratio, cover space */
+}
+
+.blog-bodycontent {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    color: #6C757D;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    /* Center the text */
+    text-align: center;
+}
