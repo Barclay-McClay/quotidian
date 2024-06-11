@@ -18,7 +18,7 @@ body {
 a {
     text-decoration: none;
     font-style: italic;
-    color: #75faff;
+    color: #17d1ff;
     margin-top: 2em;
     /* space after blog content */
     display: inline-block;
@@ -94,3 +94,35 @@ header {
     /* Center the text */
     text-align: center;
 }
+
+.post-details {
+    margin-top: 20px;
+    font-size: 0.9em; /* makes the text slightly smaller than the blog body content */
+  }
+  
+  details {
+    background-color: #f9f9f9;
+    border: 1px solid #aaa;
+    border-radius: 4px;
+    padding: .5em .75em;
+    margin-top: 1.5em; /* provides some space from the blog body content */
+  }
+  
+  summary {
+    font-weight: 700;
+    cursor: pointer;
+    color: #0D6EFD; /* matches the color of blog post title */
+  }
+  
+  #creation-details {
+    color: #6C757D; /* matches the color of blog post */
+  }
+  
+  ul {
+    list-style: disc inside none;
+    margin-bottom: 1em;
+  }
+  
+  p {
+    margin-bottom: 1em;
+  }
