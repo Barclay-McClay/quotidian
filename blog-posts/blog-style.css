@@ -19,7 +19,6 @@ a {
     text-decoration: none;
     font-style: italic;
     color: #17d1ff;
-    margin-top: 2em;
     /* space after blog content */
     display: inline-block;
     /* center the link */
@@ -40,14 +39,17 @@ a {
 }
 
 .nav-prev {
+    margin-top: 2em;
     text-align: left;
 }
 
 .bottom-backlink {
+    margin-top: 2em;
     text-align: center;
 }
 
 .nav-next {
+    margin-top: 2em;
     text-align: right;
 }
 
@@ -60,6 +62,12 @@ header {
     font-family: 'Montserrat', sans-serif;
     font-size: 2em;
     color: #0D6EFD;
+}
+
+.post-title-devblog {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2em;
+    color: #7e42ee;
 }
 
 .post-date {
@@ -91,8 +99,7 @@ header {
     color: #6C757D;
     margin-top: 2em;
     margin-bottom: 2em;
-    /* Center the text */
-    text-align: center;
+    text-align: left;     /* align the text */
 }
 
 .post-details {

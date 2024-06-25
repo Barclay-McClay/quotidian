@@ -22,7 +22,11 @@ function renderPost(post, container) {
   image.className = 'blog-img';
   
   let overlay = document.createElement('div');
-  overlay.className = 'overlay';
+  if (post.postType == "devBlog"){
+    overlay.className = 'overlay-devblog';
+  }else{
+    overlay.className = 'overlay';
+  }
 
   let title = document.createElement('h2');
   title.innerText = post.title;
@@ -30,7 +34,11 @@ function renderPost(post, container) {
   
   let date = document.createElement('p');
   date.innerText = post.date;
-  date.className = 'post-date';
+  if (post.postType == "devBlog"){
+    date.className = 'post-date-devblog';
+  }else{
+    date.className = 'post-date';
+  }
 
   overlay.append(title, date);
 
