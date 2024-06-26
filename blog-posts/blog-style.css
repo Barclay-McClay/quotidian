@@ -102,6 +102,19 @@ header {
     text-align: left;     /* align the text */
 }
 
+.footer-content {
+    background-color: #0D6EFD;
+    color: #F8F9FA;
+    text-align: center;
+    width: 100%;
+    max-width: 1200px;
+    margin-top: 1em;
+    padding: 1em;
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+  }
+  
+
 .post-details {
     margin-top: 20px;
     font-size: 0.9em; /* makes the text slightly smaller than the blog body content */
